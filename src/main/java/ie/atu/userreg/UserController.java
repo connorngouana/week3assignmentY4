@@ -14,7 +14,7 @@ public UserController(UserService myUserService)
 {
     this.myUserService = myUserService;
 }
-    @GetMapping(" /registerUser/{name}/{email}")
+    @GetMapping("/registerUser/{name}/{email}")
     public String findUserinfo(@PathVariable ("name")String name, @PathVariable("email") String email)
 {
     return myUserService.findUserinfo(name, email);
